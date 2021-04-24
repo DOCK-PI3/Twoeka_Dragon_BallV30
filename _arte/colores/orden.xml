@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+<!-- Variables creadas y definidas por el usuario,pueden ser por ej: rutas,colores,imagenes,fuentes texto,tamaños,origenes en pantalla,ect -->
+  <variables>
+    <baseColor>edebb4</baseColor>
+	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
+	<ColorSeleccionMenu>282828</ColorSeleccionMenu>
+	<primaryColorMenu>c1efb2</primaryColorMenu>
+	<secundaryColorMenu>272720</secundaryColorMenu>
+	<ColordelSelectorMenu>c1efb2</ColordelSelectorMenu>
+	<!-- COLORES HELP HELPSYSTEM: ICONOS Y TEXTO -->
+	<pauseColorIconos>c1efb2</pauseColorIconos>
+    <pauseColorTexto>ffdba2</pauseColorTexto>
+	<!-- COLOR DEL CONTADOR DE JUEGOS SYSTEMINFO Y COLOR PARA DARLE UN EFECTO GLOW "RESPLANDOR O BRILLO" -->
+	<systemInfoColor>cc0000</systemInfoColor>
+    <glowColor>282828</glowColor>
+	<colorHora>f4f2ad</colorHora>
+	<colorDescriccion>d4c99e</colorDescriccion>
+	<!-- COLORES NUEVOS: UI TITULO Y DEVELOPER ,AGREGAR EN EL THEME CON FFFFFF X DEFECTO -->
+	<UIcolortitulo>ed1b2e</UIcolortitulo>
+	<fondoMenu>282828A6</fondoMenu>
+	<colorDeveloper>ff322e</colorDeveloper>
+  </variables>
+</theme>

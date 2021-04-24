@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+## ORIGINAL THEME ##
+Theme: Carbon
+##########################
+## EDITADO POR Two-eka ##
+##########################
+Theme: Twoeka_Dragon_BallV29 para Batocera
+version: 1.5
+author: Two-eka, Mabe (mabedeep), (DOCK-PI3)
+license: creative commons CC-BY-NC-SA
+originally based on: "Carbon" by Eric Hettervik (Rookervik)
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="splash">
+
+    <splash name="splash">
+      <backgroundColor>202020FF</backgroundColor>
+    </splash>
+	
+	<!-- <image name="progressbar"> -->
+      <!-- <color>3c3bda</color> -->
+	  <!-- <pos>0.240 0.6955</pos> -->
+	  <!-- <origin>0 0</origin> -->
+    <!-- </image> -->
+	
+	<image name="progressbar">
+      <color>67a9c2</color>
+	  <pos>0.240 0.6955</pos>
+	  <origin>0 0</origin>
+    </image>
+	
+    <image name="sub_progressbar" extra="true">
+      <!-- <color>DF2000DF</color> -->
+	  <pos>0 0</pos>
+	  <origin>0 0</origin>
+	  <tile>true</tile>
+	  <!-- <path>./_arte/imgs/fondo_carga.jpg</path> -->
+	  <size>1 1</size>
+	  <zIndex>50</zIndex>
+    </image>
+    <image name="progressbar:active">
+      <color>25ffff</color>
+    </image>
+   
+    <image name="background">
+      <size>1 1</size>
+	  <pos>0 0</pos>
+      <origin>0 0</origin>
+	  <path>./_arte/imgs/pantalla_carga.png</path>
+	  <zIndex>100</zIndex>
+    </image>
+	
+    <!-- <image name="logoBatocera" extra="true"> -->
+      <!-- <size>0.17 0.17</size> -->
+	  <!-- <pos>0.415 0.020</pos> -->
+      <!-- <origin>0 0</origin> -->
+	  <!-- <path>./_arte/imgs/logo_BATOCERA_WIKI.png</path> -->
+	  <!-- <zIndex>180</zIndex> -->
+    <!-- </image> -->
+
+  </view>
+</theme>

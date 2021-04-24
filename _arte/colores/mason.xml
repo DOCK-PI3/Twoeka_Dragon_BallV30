@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <menuBackground>./_arte/menu_bg/MENU-START-BACKGROUND_7.png</menuBackground>
+    <baseColor>ffffff</baseColor>
+	<colorHora>fc3d39</colorHora>
+	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
+	<ColorSeleccionMenu>1c1c1c</ColorSeleccionMenu>
+	<primaryColorMenu>ffffff</primaryColorMenu>
+	<secundaryColorMenu>777777</secundaryColorMenu>
+	<ColordelSelectorMenu>ffffff</ColordelSelectorMenu>
+	<!-- COLORES HELP HELPSYSTEM: ICONOS Y TEXTO -->
+	<pauseColorIconos>fff8e7</pauseColorIconos>
+    <pauseColorTexto>d0d0d0</pauseColorTexto>
+	<!-- COLORES MENU START Y SELECT: FONDO ,TEXTO ,TEXTO SELECCIONADO ,SELECTOR ,DEGRADADO GENERAL ,SEPARADOR ,TITULO DEL MENU -->
+	<!-- <menucolorfondo>1c1c1c</menucolorfondo> -->
+	<menucolortexto>bdb9b6</menucolortexto>
+	<menucolortextoselecionado>666666</menucolortextoselecionado>
+	<gradientEndColor>ffffff</gradientEndColor>
+    <glowColor>d0d0d0d0</glowColor>
+	<menucolorseparador>fffacd</menucolorseparador>
+	<menucolortitulo>fafbfd</menucolortitulo>
+	<centerFadeColor>00000000</centerFadeColor>
+    <backgroundColor>fafbfd</backgroundColor>
+    <bottomBarColor>fafbfd</bottomBarColor>
+    <systemInfoColor>525e61</systemInfoColor>
+    <groupColor>000000</groupColor>
+    <groupSeparatorColor>000000</groupSeparatorColor> 
+  </variables>
+</theme>

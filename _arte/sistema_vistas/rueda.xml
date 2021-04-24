@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>   
+  <view name="system">
+    <carousel name="systemcarousel">
+        <type>vertical_wheel</type>
+		<pos>0.035 -0.005</pos>
+        <size>0.965 0.895</size>
+        <logoScale>1.2</logoScale>
+        <logoSize>0.22 0.15</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>5</maxLogoCount>
+        <logoRotation>8.15</logoRotation>
+		<logoRotationOrigin>4.0 -0.1</logoRotationOrigin>
+		<logoAlignment>right</logoAlignment>		
+        <zIndex>43</zIndex>	 
+	</carousel>
+    <image name="background" extra="true">
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <path>./_arte/bg-DBZ/${system.theme}.jpg</path>
+	  <color>cccccc</color>
+	  <zIndex>10</zIndex>
+    </image> 
+    <video name="video_sys" extra="true">
+	  <path>./_arte/bgv-sistemas/default.mp4</path>
+      <path>./_arte/bgv-sistemas/${system.theme}.mp4</path>
+	  <pos>0.08 0.12</pos>
+	  <size>0.52 0.68</size>
+      <maxSize>0.525 0.685</maxSize>
+      <origin>0 0</origin>
+      <delay>0.5</delay>
+	  <effect>none</effect>
+      <loops>2</loops>
+    </video>	
+     <text name="systemInfo">
+      <pos>-0.215 0.72</pos>
+    </text> 
+  </view>
+</theme>

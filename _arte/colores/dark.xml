@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <!-- <backgroundImage_A>./_arte/FONDO_CAPCOM_2020_dark.png</backgroundImage_A> -->
+	<!-- <menuBackground>./_arte/menu_bg/MENU-START-BACKGROUND_7.png</menuBackground> -->
+    <baseColor>000000</baseColor>
+	<colorHora>f57d00</colorHora>
+	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
+	<ColorSeleccionMenu>f57d00</ColorSeleccionMenu>
+	<primaryColorMenu>b7b7b7</primaryColorMenu>
+	<secundaryColorMenu>777777</secundaryColorMenu>
+	<ColordelSelectorMenu>191919</ColordelSelectorMenu>
+	<!-- COLORES HELP HELPSYSTEM: ICONOS Y TEXTO -->
+	<pauseColorIconos>fff8e7</pauseColorIconos>
+    <pauseColorTexto>d0d0d0</pauseColorTexto>
+	<!-- COLORES MENU START Y SELECT: FONDO ,TEXTO ,TEXTO SELECCIONADO ,SELECTOR ,DEGRADADO GENERAL ,SEPARADOR ,TITULO DEL MENU -->
+	<fondoMenu>000000</fondoMenu>
+	<menucolortexto>bdb9b6</menucolortexto>
+	<menucolortextoselecionado>666666</menucolortextoselecionado>
+	<!-- <gradientEndColor>b7b7b7</gradientEndColor> -->
+    <glowColor>ce1126</glowColor>
+	<menucolorseparador>fffacd</menucolorseparador>
+	<menucolortitulo>fafbfd</menucolortitulo>
+	<centerFadeColor>00000000</centerFadeColor>
+    <backgroundColor>000000</backgroundColor>
+    <bottomBarColor>fafbfd</bottomBarColor>
+    <systemInfoColor>d03027</systemInfoColor>
+    <groupColor>fd9f3e</groupColor>
+    <groupSeparatorColor>ed7902</groupSeparatorColor> 
+  </variables>
+</theme>

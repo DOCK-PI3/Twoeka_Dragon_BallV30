@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <menuBackground>./_arte/menu_bg/MENU-START-BACKGROUND_2.png</menuBackground>
+	<baseColor>bf9f1c</baseColor>
+    <gradientEndColor>746111</gradientEndColor>
+    <centerFadeColor>d7b31f33</centerFadeColor>
+    <bottomBarColor>e2c036B0</bottomBarColor>
+    <glowColor>8B711520</glowColor>
+    <systemInfoColor>FAFAFFB0</systemInfoColor>
+    <backgroundColor>302505</backgroundColor>
+	<colorHora>fc3d39</colorHora>
+	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
+	<ColorSeleccionMenu>1c1c1c</ColorSeleccionMenu>
+	<primaryColorMenu>ffffff</primaryColorMenu>
+	<secundaryColorMenu>777777</secundaryColorMenu>
+	<ColordelSelectorMenu>ffffff</ColordelSelectorMenu>
+	<!-- COLORES HELP HELPSYSTEM: ICONOS Y TEXTO -->
+	<pauseColorIconos>fff8e7</pauseColorIconos>
+    <pauseColorTexto>d0d0d0</pauseColorTexto>
+	<!-- COLORES MENU START Y SELECT: FONDO ,TEXTO ,TEXTO SELECCIONADO ,SELECTOR ,DEGRADADO GENERAL ,SEPARADOR ,TITULO DEL MENU -->
+	<!-- asi se ve el fondo transparente total, comentado para mostrar bien la imagen de fondo -->
+	<!-- <menucolorfondo>1c1c1c1c</menucolorfondo> -->
+	<menucolortexto>bdb9b6</menucolortexto>
+	<menucolortextoselecionado>666666</menucolortextoselecionado>
+	<menucolorseparador>fffacd</menucolorseparador>
+	<menucolortitulo>fafbfd</menucolortitulo>	
+  </variables>
+</theme>

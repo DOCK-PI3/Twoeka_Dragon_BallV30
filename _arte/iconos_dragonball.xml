@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+ <view name="menu">
+    <menuIcons name="menuicons">
+      <iconKodi>./_arte/iconos/Kodi.png</iconKodi>
+      <iconSystem>./_arte/iconos/System.png</iconSystem>
+      <iconUpdates>./_arte/iconos/Updates.png</iconUpdates>
+      <iconGames>./_arte/iconos/Games.png</iconGames>
+      <iconControllers>./_arte/iconos/Controllers.png</iconControllers>
+      <iconUI>./_arte/iconos/UI.png</iconUI>
+      <iconSound>./_arte/iconos/Sound.png</iconSound>
+      <iconNetwork>./_arte/iconos/Network.png</iconNetwork>
+      <iconScraper>./_arte/iconos/Scraper.png</iconScraper>
+      <iconAdvanced>./_arte/iconos/Advanced.png</iconAdvanced>
+      <iconQuit>./_arte/iconos/Quit.png</iconQuit>
+      <iconRestart>./_arte/iconos/Restart.png</iconRestart>
+      <iconShutdown>./_arte/iconos/Shutdown.png</iconShutdown>
+      <iconFastShutdown>./_arte/iconos/Fastshutdown.png</iconFastShutdown>
+      <iconRetroachievements>./_arte/iconos/Contest.png</iconRetroachievements>
+    </menuIcons>
+  </view>
+  
+  	<view name="menu, system, basic, detailed, grid">
+		<helpsystem name="help">
+			<iconColor>FFFFFFFF</iconColor>
+			<textColor>${pauseColorTexto}</textColor>
+			<iconUpDown>./_arte/iconsets/dragonball/updown.png</iconUpDown>
+			<iconLeftRight>./_arte/iconsets/dragonball/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_arte/iconsets/dragonball/all.png</iconUpDownLeftRight>
+			<iconA>./_arte/iconsets/dragonball/a.png</iconA>
+			<iconB>./_arte/iconsets/dragonball/b.png</iconB>
+			<iconX>./_arte/iconsets/dragonball/x.png</iconX>
+			<iconY>./_arte/iconsets/dragonball/y.png</iconY>
+			<iconL>./_arte/iconsets/dragonball/l.png</iconL>
+			<iconR>./_arte/iconsets/dragonball/r.png</iconR>
+			<iconStart>./_arte/iconsets/dragonball/start.png</iconStart>
+			<iconSelect>./_arte/iconsets/dragonball/select.png</iconSelect>
+		</helpsystem>		
+	</view>
+  
+</theme>

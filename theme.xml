@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:		Batocera-BaSe | /README.md /theme.xml /_arte/* /_arte/logos/* /_arte/iconos/*
+version:		1.0 for batocera 5.25 o superior....
+author:			DOCK-PI3 "mabedeep" & "Two-eka"
+Fecha:			12-10-2020
+INFO:			Creado para varios tutoriales, como crear un theme base para batocera partiendo de un esqueleto base.
+Material sacado del theme carbon original de batocera : 53 logos .svg mas 3 .png bottom.png,button.png,button_filled.png y un button.pdn
+Agradecimientos a los creadores del theme es-theme-TMCTV-dragonball, ya que el theme está basado en el suyo y hay archivos suyos que he utilizado
+para el theme (music, sound and videodefault).
+Agradecimientos a mabedeep por sus videotutoriales y el theme base que creó, sin ello esto no se hubiera podido crear.
+Dejo enlace de YouTube de los videotutoriales de mabedeep para quien quiera crear su theme "si se quiere, se puede":
+https://www.youtube.com/watch?v=2NkIwgdwFLc&list=PLCMVRDu_KJcXRsr5iE3s6w5BSFnkYhNHR&index=1
+Se agradecería que os subscribais al canal y ya de paso dejar vuestro comentario y vuestro like...es gratis y solo cuesta vuestro tiempo.
+Ahí lo dejo
+Espero que os guste
+.....................................
+-->
+<theme>
+
+  <formatVersion>7</formatVersion>
+
+<!-- Variables creadas y definidas por el usuario,pueden ser por ej: rutas,colores,imagenes,fuentes texto,tamaños,origenes en pantalla,ect -->
+  <variables>
+    <baseColor>8b0000</baseColor>
+	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
+	<ColorSeleccionMenu>e32934</ColorSeleccionMenu>
+	<primaryColorMenu>ffffff</primaryColorMenu>
+	<secundaryColorMenu>d7d7d8</secundaryColorMenu>
+	<ColordelSelectorMenu>1c1c1c</ColordelSelectorMenu>
+	<!-- COLORES HELP HELPSYSTEM: ICONOS Y TEXTO -->
+	<pauseColorIconos>cecece</pauseColorIconos>
+    <pauseColorTexto>efe9e5</pauseColorTexto>
+	<!-- COLOR DEL CONTADOR DE JUEGOS SYSTEMINFO Y COLOR PARA DARLE UN EFECTO GLOW "RESPLANDOR O BRILLO" -->
+	<systemInfoColor>1d1d1b</systemInfoColor>
+    <glowColor>DF8020BB</glowColor>
+	<colorHora>ffffff</colorHora>
+	<subset.colorset>Juego de colores</subset.colorset>
+	<freedom>Libertad</freedom>
+	<colorDescriccion>ffffff</colorDescriccion> <!-- Añadir variable en la vista de detalle, md_description, color  -->
+    <UIcolortitulo>ffffff</UIcolortitulo>
+	<colorDeveloper>ffffff</colorDeveloper>
+	<players_ruta>./_arte/imgs/bg_personajes/</players_ruta>
+	<systemViewName>Vistas para el Sistema</systemViewName>
+  </variables>
+
+  <!-- COLORES PARA EL THEME  -->
+  <subset name="colorset" displayName="${subset.colorset}">
+    <include subset="colorset" name="default" displayName="${default}">./_arte/colores/default.xml</include>
+	<include subset="colorset" name="freedom" displayName="${freedom}">./_arte/colores/freedom.xml</include>
+	<include subset="colorset" name="melon" displayName="${melon}">./_arte/colores/melon.xml</include>
+    <include subset="colorset" name="fundacion" displayName="${fundacion}">./_arte/colores/fundacion.xml</include>
+	<include subset="colorset" name="ley" displayName="${ley}">./_arte/colores/ley.xml</include>
+	<include subset="colorset" name="orden" displayName="${orden}">./_arte/colores/orden.xml</include>
+    <include subset="colorset" name="atardecer" >./_arte/colores/atardecer.xml</include>
+	<include subset="colorset" name="cuarentena" >./_arte/colores/cuarentena.xml</include>
+	<include subset="colorset" name="dark">./_arte/colores/dark.xml</include>
+	<include subset="colorset" name="españa" >./_arte/colores/españa.xml</include>
+    <include subset="colorset" name="hielo" >./_arte/colores/hielo.xml</include>
+	<include subset="colorset" name="marron" >./_arte/colores/marron.xml</include>
+	<include subset="colorset" name="mason">./_arte/colores/mason.xml</include>
+	<include subset="colorset" name="rosachicle" >./_arte/colores/rosachicle.xml</include>
+	<include subset="colorset" name="verdelimon" >./_arte/colores/verdelimon.xml</include>
+	<include subset="colorset" name="yellow" >./_arte/colores/yellow.xml</include>	
+  </subset>
+  
+  <subset name="botones-menu">
+    <include name="iconos dragonball">./_arte/iconos_dragonball.xml</include>
+	<include name="iconos psx">./_arte/iconos_psx.xml</include>
+	<include name="iconos default">./_arte/iconos_default.xml</include>
+	<include name="iconos snes">./_arte/iconos_snes.xml</include>
+	<include name="iconos xbox">./_arte/iconos_xbox.xml</include>	
+  </subset>
+  
+  <view name="system">
+		<sound name="directory">
+			<path>./_arte/musica/</path>
+		</sound>
+	
+	</view>
+  
+<!-- Puede agregar ,detailed y grid junto a basic y system si crea esos modos de vista -->
+  <view name="basic,grid">
+    <helpsystem name="help">
+	  <pos>0.13 0.916</pos>
+	  <textColor>${pauseColorTexto}</textColor>
+      <iconColor>${pauseColorIconos}</iconColor>
+	  <fontPath>./_arte/fuentes/AmericanCaptain.ttf</fontPath>
+	  <fontSize>0.038</fontSize>
+    </helpsystem>
+
+  </view>
+
+<!-- MENU START SELECT ,MENU AL PULSAR PAUSE O SELECT -->  
+  <view name="menu">
+	<menuText name="menutitle">
+	  <fontPath>./_arte/fuentes/AmericanCaptain.ttf</fontPath>
+      <fontSize>0.047</fontSize>
+      <color>${UIcolortitulo}</color>
+    </menuText>
+    <menuText name="menufooter">
+      <fontPath>./_arte/fuentes/AmericanCaptain.ttf</fontPath>
+      <fontSize>0.022</fontSize>
+	  <color>fcfcfc</color>
+    </menuText>
+    <menuText name="menutext">
+      <fontPath>./_arte/fuentes/AmericanCaptain.ttf</fontPath>
+      <fontSize>0.034</fontSize>
+      <color>7b868a</color>
+      <separatorColor>ffffff</separatorColor>
+      <selectorColor>dgdgdg</selectorColor>
+      <selectorColorEnd>dgdgdg</selectorColorEnd>
+      <selectedColor>FFFFFF9F</selectedColor>
+      <selectorGradientType>vertical</selectorGradientType>
+    </menuText>
+    <menuTextSmall name="menutextsmall">
+      <fontPath>./_arte/fuentes/AmericanCaptain.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+      <color>FFFFFF</color>
+    </menuTextSmall>
+    <menuBackground name="menubg">
+      <color>3b4446BF</color>
+      <cornerSize></cornerSize>
+	  <path>./_arte/imgs/MENU-START-BACKGROUND.png</path>
+	  <fadePath>./_arte/imgs/fond_menu.jpg</fadePath>
+      <!-- <path>./_arte/imgs/MENU-START-BACKGROUND.png</path> -->
+    </menuBackground>
+    <menuTextEdit name="menutextedit">
+	  <inactive>./_arte/textinput_ninepatch.png</inactive>
+      <active>./_arte/textinput_ninepatch_active.png</active>
+	</menuTextEdit>
+    <menuGroup name="menugroup">
+      <fontPath>./_arte/fuentes/AmericanCaptain.ttf</fontPath>
+      <fontSize>0.025</fontSize>
+      <color>ffffff</color>
+      <separatorColor>7b868a</separatorColor>    
+      <backgroundColor>1b212b</backgroundColor>
+      <lineSpacing>2.5</lineSpacing>
+    </menuGroup>
+    <menuButton name="menubutton">
+	  <path>./_arte/button.png</path>
+      <filledPath>./_arte/button_filled.png</filledPath>
+    </menuButton>
+  
+  </view>
+
+<!-- ICONOS EN EL MENU PAUSE "START" -->
+  <view name="menu">
+    <menuIcons name="menuicons">
+      <iconKodi>./_arte/iconos/Kodi.png</iconKodi>
+      <iconSystem>./_arte/iconos/System.png</iconSystem>
+      <iconUpdates>./_arte/iconos/Updates.png</iconUpdates>
+      <iconGames>./_arte/iconos/Games.png</iconGames>
+      <iconControllers>./_arte/iconos/Controllers.png</iconControllers>
+      <iconUI>./_arte/iconos/UI.png</iconUI>
+      <iconSound>./_arte/iconos/Sound.png</iconSound>
+      <iconNetwork>./_arte/iconos/Network.png</iconNetwork>
+      <iconScraper>./_arte/iconos/Scraper.png</iconScraper>
+      <iconAdvanced>./_arte/iconos/Advanced.png</iconAdvanced>
+      <iconQuit>./_arte/iconos/Quit.png</iconQuit>
+      <iconRestart>./_arte/iconos/Restart.png</iconRestart>
+      <iconShutdown>./_arte/iconos/Shutdown.png</iconShutdown>
+      <iconFastShutdown>./_arte/iconos/Fastshutdown.png</iconFastShutdown>
+      <iconRetroachievements>./_arte/iconos/Contest.png</iconRetroachievements>
+    </menuIcons>
+  </view>
+
+
+<!-- VISTA PRINCIPAL DE SISTEMAS  -->
+  <view name="system">       
+    <image name="background" extra="true">
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+	  <path>./_arte/bg-DBZ/default.jpg</path>
+      <path>./_arte/bg-DBZ/${system.theme}.jpg</path>
+	  <color>cccccc</color>
+	  <zIndex>10</zIndex>
+    </image>     
+    <text name="logoText">
+	  <fontSize>0.053</fontSize>
+	  <fontPath>./_arte/Halo3.ttf</fontPath>
+      <color>ffffff</color>
+      <forceUppercase>1</forceUppercase>
+    </text>
+	<image name="kamehameha_helpmenu" extra="true">
+	<path>./_arte/imgs/kamehameha_helpmenu.png</path>
+	<size>1 1</size>
+	<zIndex>98</zIndex>
+    </image>
+    <image name="logo">
+     <!-- BUSCA SI HAY .SVG -->
+      <path>./_arte/logos/${system.theme}.svg</path>
+	<!-- BUSCA SI HAY .PNG Y SI HAY CAMBIA EL .SVG ANTERIOR-->
+      <path>./_arte/logos/${system.theme}.png</path>
+<!--       <reflexion>0.12 0.0</reflexion>
+      <reflexionOnFrame>true</reflexionOnFrame> -->	     
+	</image>
+	
+    <text name="systemInfo">
+      <pos>0.015 0.72</pos>
+      <size>1 0.25</size>
+      <backgroundColor>0000FF00</backgroundColor>
+      <color>${systemInfoColor}</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>2</glowSize>
+      <fontSize>0.053</fontSize>
+	  <fontPath>./_arte/Halo3.ttf</fontPath>
+	  <!-- <reflexion>0.17 0.0</reflexion> -->
+    </text>
+
+    <video name="video_sys" extra="true">
+	  <path>./_arte/bgv-sistemas/default.mp4</path>
+      <path>./_arte/bgv-sistemas/${system.theme}.mp4</path>
+	  <pos>0.5 0.23</pos>
+	  <size>0.32 0.38</size>
+      <maxSize>0.325 0.385</maxSize>
+      <origin>0.5 0.5</origin>
+      <delay>0.8</delay>
+	  <effect>none</effect>
+      <loops>2</loops>
+    </video>
+
+	<helpsystem name="help">
+	  <pos>0.122 0.918</pos>
+	  <textColor>1d1d1b</textColor>
+      <iconColor>${pauseColorIconos}</iconColor>
+	  <fontPath>./_arte/fuentes/Roboto-Medium.ttf</fontPath>
+	  <fontSize>0.0296</fontSize>
+    </helpsystem>
+	
+	
+  </view>
+
+   <!-- OPCIONES VISTAS DE PANTALLA PARA EL THEME | ESTILOS DE VISTA PARA EL SISTEMA COPIAR EN EL .XML PRINCIPAL bajo la vista system -->
+  <subset name="systemview" displayName="${systemViewName}">
+    <include name="rueda2">./_arte/sistema_vistas/rueda_2.xml</include>
+	<include name="transparent">./_arte/sistema_vistas/transparent.xml</include>
+	<include name="rueda">./_arte/sistema_vistas/rueda.xml</include>
+  </subset>  
+ 
+ <!-- MODO DE VISTA BASICO BASIC -->
+  <view name="basic">
+    <image name="barrita_top" extra="true">
+      <tile>true</tile>
+      <pos>0 0.175</pos>
+      <origin>0 0</origin>
+      <size>1 0.009</size>
+      <color>282828</color>
+	  <path>./_arte/bottom.png</path>
+	  <zIndex>98</zIndex>
+    </image>
+    <image name="background" extra="true">
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <path>./_arte/imgs/fondo_vista_basica.jpg</path>
+    </image>
+    <textlist name="gamelist">
+      <selectorColor>c6ce00</selectorColor>
+      <selectedColor>cc0605</selectedColor>
+      <primaryColor>d6dde3</primaryColor>
+	  <glowColor>DF8020BB</glowColor>
+      <secondaryColor>${secondaryColorMenu}</secondaryColor>
+      <fontPath>./_arte/fuentes/dbz.ttf</fontPath>
+      <fontSize>0.032</fontSize>
+      <pos>0.295 0.195</pos>
+      <size>0.46 0.712</size>
+	  <horizontalMargin>0.01</horizontalMargin>
+      <alignment>center</alignment>
+	  <forceUppercase>1</forceUppercase>
+      <scrollSound>./_arte/sonidos/menusound.wav</scrollSound>
+    </textlist>
+	<helpsystem name="help">
+	  <pos>0.085 0.942</pos>
+      <fontPath>./_arte/fuentes/AmericanCaptain.ttf</fontPath>
+      <fontSize>0.035</fontSize>
+	  <textColor>${pauseColorTexto}</textColor>
+      <iconColor>${pauseColorIconos}</iconColor>
+    </helpsystem>
+  
+  </view>
+
+  
+<!-- LOGO Y LOGOTEXT EN BASIC | LOGO DEL SISTEMA O NOMBRE SI NO HAY LOGO, PUEDE AGREGAR VIEW detailed y grid junto a basic -->
+  <view name="basic,detailed,grid">
+    <text name="logoText">
+      <pos>0.5 0.084</pos>
+	  <size>0.22 0.14</size>
+      <maxSize>0.23 0.14</maxSize>
+      <origin>0.5 0.5</origin>
+      <alignment>center</alignment>
+      <fontSize>0.08</fontSize>
+      <fontPath>./_arte/fuentes/halo.ttf</fontPath>
+      <!--<alignment>left</alignment>-->
+      <color>${baseColor}</color>
+      <forceUppercase>true</forceUppercase>
+    </text>
+    <image name="logo">
+      <!-- try png -->
+      <path>./_arte/logos_DBZ/${system.theme}.png</path>
+      <path>./_arte/logos_DBZ/${system.theme}.svg</path>
+      <!-- SI EXISTE X EJ megadrive2.svg ,USA ESTA VERSION -->
+      <!-- <path>./_arte/logos/${system.theme}2.svg</path> -->
+      <!--<pos>0.266 0.074</pos><maxSize>0.460 0.126</maxSize>-->
+      <pos>0.5 0.090</pos>
+	  <size>0.18 0.10</size>
+      <maxSize>0.185 0.105</maxSize>
+      <origin>0.5 0.5</origin>
+    </image>
+  
+  </view>
+
+
+<!-- MODO DE VISTA DETALLADO DETAILED -->
+  <view name="detailed">
+    <image name="mabe_players" extra="true">
+	<pos>0.34 0.27</pos>
+	<path>${players_ruta}${system.theme}.png</path>
+	<size>0.32 0.56</size>
+	<maxSize>0.325 0.565</maxSize>
+	<zIndex>98</zIndex>
+	
+	<storyboard event="activate">
+       <animation property="scale" from="0.84" to="1.0" duration="350" mode="bump"/>
+      </storyboard>
+
+
+      <scale>0.3</scale>
+      <storyboard>
+        <animation property="scale" from="1.0" to="0.5" duration="500" mode="easeInOut"/>        
+        <animation property="scale" from="0.5" to="0.6" begin="500" duration="1200" mode="easeInOut" autoreverse="true" repeat="forever"/>        
+      </storyboard>    
+      <storyboard event="activate">
+       <animation property="scale" from="0.3" to="1.10" duration="500" mode="easeIn"/>        
+        <animation property="scale" from="1.10" to="0.8" begin="500" duration="1200" mode="easeInOut" autoreverse="true" repeat="forever"/>        
+      </storyboard>
+    </image>
+    <video name="md_video">
+	  <default>./_arte/video/static.mp4</default>
+      <pos>0.6584 0.463</pos>
+	  <size>0.328 0.427</size>
+      <maxSize>0.333 0.432</maxSize>
+      <origin>0.5 0.5</origin>
+      <delay>0.8</delay>
+	  <effect>none</effect>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+      <loops>2</loops>
+    </video>
+    <image name="md_image">
+	<pos>0.6584 0.463</pos>
+	<default>./_arte/imgs/img_default.png</default>
+	<size>0.318 0.407</size>
+    </image>
+    <image name="background">
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <path>./_arte/imgs/fondgamelist.jpg</path>
+    </image>
+    <text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_players, md_players, md_lbl_releasedate">
+      <color>333333</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./_arte/fuentes/CashCurrency.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+    </text>
+    <text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer, md_lbl_players, md_players">
+      <pos>1 1</pos>
+    </text>
+    <datetime name="md_lastplayed, md_releasedate">
+      <color>333333</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./_arte/fuentes/CashCurrency.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+    </datetime>
+    <datetime name="md_lastplayed">
+      <pos>1 1</pos>
+    </datetime>
+    <text name="md_developer">
+      <color>${colorDeveloper}</color>
+	  <glowColor>DF8020BB</glowColor>
+      <pos>0.823 0.701</pos>
+      <size>0.16 0.07</size>
+      <alignment>center</alignment>
+      <fontSize>0.022</fontSize>
+	  <forceUppercase>1</forceUppercase>
+    </text>    
+    <rating name="md_rating">
+      <pos>0.455 0.697</pos>
+      <size>0.08 0.04</size>
+      <color>FFFF00</color>
+      <unfilledColor>808080</unfilledColor>
+	  <filledPath>./_arte/imgs/DB01.png</filledPath>
+	  <unfilledPath>./_arte/imgs/DB02.png</unfilledPath>
+    </rating>
+    <text name="md_lbl_players">
+	  <glowColor>DF8020BB</glowColor>
+      <pos>0.821 0.772</pos>
+      <size>0.1 0</size>
+    </text>
+    <text name="md_players">
+      <color>000000</color>
+      <pos>0.915 0.771</pos>
+      <size>0.7 0</size>
+    </text>
+    <text name="md_lbl_releasedate">
+      <color>333333</color>
+	  <glowColor>DF8020BB</glowColor>
+      <pos>0.821 0.81</pos>
+      <size>0.2 0</size>
+    </text>
+    <datetime name="md_releasedate">
+    <color>000000</color>
+      <pos>0.915 0.81</pos>
+      <size>0 0.033</size>
+    </datetime>
+    <text name="md_description">
+      <origin>0 0</origin>
+	  <pos>0.36 0.745</pos>
+      <size>0.288 0.13</size>    
+      <color>1d1d1b</color>
+      <forceUppercase>0</forceUppercase>
+      <!-- <fontPath>./_arte/Cabin-Bold.ttf</fontPath> -->
+      <fontSize>0.023</fontSize>
+	  <zIndex>69</zIndex>
+    </text>
+    <textlist name="gamelist">
+      <selectorColor>${ColordelSelectorMenu}</selectorColor>
+      <selectedColor>${ColorSeleccionMenu}</selectedColor>
+      <primaryColor>${primaryColorMenu}</primaryColor>
+      <secondaryColor>${secondaryColorMenu}</secondaryColor>
+      <fontPath>./_arte/fuentes/AmericanCaptain.ttf</fontPath>
+      <forceUppercase>1</forceUppercase>
+      <pos>0.031 0.217</pos>
+      <size>0.27 0.659</size>
+      <alignment>left</alignment>
+      <horizontalMargin>0.00</horizontalMargin>
+      <fontSize>0.045</fontSize>
+      <scrollSound>./_arte/sonidos/menusound_DBZ.wav</scrollSound>
+    </textlist>
+    <image name="md_favorite">
+      <pos>0.940 0.700</pos>
+      <path>./_arte/favorito.png</path>
+      <maxSize>0.032 0.032</maxSize>
+      <origin>0.5 0.5</origin>
+      <color>969696</color>
+    </image>
+<!-- 	<image name="md_marquee" extra="true">        
+	  <default>./_arte/marq_default.png</default> 
+      <pos>0.69 0.7</pos>
+      <origin>0 0</origin>
+      <size>0.22 0.15</size>
+	  <zIndex>90</zIndex>
+    </image> -->
+	<helpsystem name="help">
+	  <pos>0.12 0.916</pos>
+	  <textColor>333333</textColor>
+      <iconColor>${pauseColorIconos}</iconColor>
+	  <fontPath>./_arte/fuentes/AmericanCaptain.ttf</fontPath>
+	  <fontSize>0.034</fontSize>
+    </helpsystem>
+  
+  </view>
+ 
+ 
+ <!-- MODO DE VISTA CUADRICULA GRID -->
+  <view name="grid">
+    <image name="background">
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <path>./_arte/imgs/vista_grid.jpg</path>
+    </image>   
+    <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+      <color>A0A0B000</color>
+    </text>
+    <text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
+      <color>ffffff00</color>
+    </text>
+    <datetime name="md_releasedate, md_lastplayed">
+      <color>ffffff00</color>
+    </datetime>
+    <rating name="md_rating">
+      <pos>0.862 0.848</pos>
+      <size>0.063 0.042</size>
+      <color>FFFFFF</color>
+      <unfilledColor>808080</unfilledColor>
+      <filledPath>./_arte/imgs/DB01.png</filledPath>
+      <unfilledPath>./_arte/imgs/DB02.png</unfilledPath>
+    </rating>
+    <imagegrid name="gamegrid">
+      <margin>0.03 0.050</margin>
+      <pos>0.025 0.235</pos>
+      <size>0.940 0.58</size>
+      <padding>0.03 0.04 0.03 0.05</padding>
+      <showVideoAtDelay>800</showVideoAtDelay>
+      <zIndex>10</zIndex>
+      <autoLayout>5 2</autoLayout>
+      <autoLayoutSelectedZoom>1.42</autoLayoutSelectedZoom>
+      <animateSelection>false</animateSelection>
+      <centerSelection>true</centerSelection>
+    </imagegrid>
+    <gridtile name="default">
+      <backgroundColor>FFFFFF00</backgroundColor>
+      <backgroundCornerSize>9 9</backgroundCornerSize>
+      <selectionMode>image</selectionMode>
+      <padding>5 5</padding>
+      <imageColor>FFFFFFB0</imageColor>
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
+      <backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
+      <imageColor>FFFFFFFF</imageColor>
+    </gridtile>
+    <text name="gridtile">
+      <color>D0D0D0</color>
+      <backgroundColor>00000000</backgroundColor>
+      <fontSize>0.028</fontSize>
+      <alignment>center</alignment>
+      <size>1 0.24</size>
+    </text>
+    <text name="gridtile:selected">
+      <color>FFFFFF</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>1</glowSize>
+    </text>
+    <ninepatch name="gridtile.background:selected">
+      <animateColor>EFEF60B0</animateColor>
+      <animateColorTime>950</animateColorTime>
+    </ninepatch>
+  </view>
+
+  <!-- MODO DE VISTA PERSONALIZADOS | TILES ,CAROUSEL ,BOXES ,DOCK-PI3 -->
+  <customView name="ProBoxes" inherits="grid" displayName="${proGridName}">
+    <text name="md_name" extra="true">
+      <color>ffffff</color>
+      <pos>0.65 0.185</pos>
+      <size>0.32 0</size>
+      <alignment>left</alignment>
+      <glowColor>00000016</glowColor>
+      <glowSize>4</glowSize>
+      <fontSize>0.04</fontSize>
+      <fontPath>./_arte/Halo3.ttf</fontPath>
+    </text>
+	<text name="md_description">
+      <pos>0.655 0.741</pos>
+      <size>0.30 0.09</size>    
+      <color>ffffff</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./_arte/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.031</fontSize>
+    </text>	
+	<imagegrid name="gamegrid">
+	  <size>0.52 0.58</size>
+	  <showVideoAtDelay>-1</showVideoAtDelay>
+      <autoLayout>3 2</autoLayout>
+      <autoLayoutSelectedZoom>1.25</autoLayoutSelectedZoom>
+    </imagegrid>
+    <text name="gridtile">
+      <visible>false</visible>
+    </text>
+    <text name="gridtile:selected">
+      <visible>false</visible>
+    </text>
+    <image name="gridtile.favorite">
+      <path>./_arte/imgs/DB01.png</path>
+      <pos>0.91 0.09</pos>
+      <maxSize>0.14 0.14</maxSize>
+      <origin>0.5 0.5</origin>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>FFFF00B0</color>
+    </image>
+	<video name="md_video">
+      <pos>0.802 0.515</pos>
+	  <size>0.30 0.425</size>
+	  <default>./_arte/video/static.mp4</default> 
+      <!-- <maxSize>0.412 0.436</maxSize> -->
+      <origin>0.5 0.5</origin>
+      <delay>0.8</delay>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+      <loops>1</loops>
+      <roundCorners>0.02</roundCorners>
+    </video>
+ <image name="mabe_players" extra="true">
+	<pos>0.51 0.31</pos>
+	<path>${players_ruta}${system.theme}.png</path>
+	<size>0.18 0.42</size>
+	<maxSize>0.185 0.425</maxSize>
+	<zIndex>98</zIndex>
+ </image>
+  </customView>
+  
+  <customView name="DockPi3" inherits="grid" tinyScreen="false">
+	<text name="md_name" extra="true">
+      <color>ffffff</color>
+      <pos>0.0261 0.215</pos>
+      <size>0.314 0.09</size>
+      <alignment>left</alignment>
+      <glowColor>00000016</glowColor>
+      <glowSize>4</glowSize>
+      <fontSize>0.08</fontSize>
+      <fontPath>./_arte/Cabin-Bold.ttf</fontPath>
+    </text>	
+	<rating name="md_rating">
+      <pos>0.06 0.79</pos>
+      <size>0.14 0.098</size>
+      <color>FFFF00</color>
+      <unfilledColor>808080</unfilledColor>
+	  <filledPath>./_arte/DB01.png</filledPath>
+	  <unfilledPath>./_arte/DB02.png</unfilledPath>
+    </rating>
+    <text name="md_lbl_players">
+      <pos>0.09 0.268</pos>
+      <size>0.07 0</size>
+	  <color>EFEFFF</color>
+	  <fontSize>0.051</fontSize>
+    </text>
+    <text name="md_players">
+      <color>EFEFFF</color>
+      <pos>0.23 0.34</pos>
+      <size>0.04 0</size>
+	  <fontSize>0.051</fontSize>
+    </text>
+    <text name="md_lbl_releasedate">
+      <color>969696</color>
+      <pos>0.735 0.84</pos>
+      <size>0.2 0</size>
+    </text>
+    <datetime name="md_releasedate">
+    <color>EFEFFF</color>
+      <pos>0.875 0.84</pos>
+      <size>0 0.033</size>
+    </datetime>
+    <text name="md_description">
+      <pos>0.025 0.455</pos>
+      <size>0.365 0.32</size>    
+      <color>ffffff</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./_arte/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.031</fontSize>
+    </text>	
+	<video name="md_video">
+      <pos>0.812 0.528</pos>
+	  <size>0.30 0.416</size>
+	  <default>./_arte/video/static.mp4</default> 
+      <!-- <maxSize>0.412 0.436</maxSize> -->
+      <origin>0.5 0.5</origin>
+      <delay>0.8</delay>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+      <loops>1</loops>
+      <roundCorners>0.02</roundCorners>
+    </video>	
+	<image name="md_marquee" extra="true">
+      <default>./_arte/imgs/img_default.png</default> 
+	  <pos>0.665 0.25</pos>
+      <origin>0 0</origin>
+      <size>0.28 0.17</size>
+	  <zIndex>20</zIndex>
+    </image>	
+    <imagegrid name="gamegrid">
+	<!-- <imageSource>marquee</imageSource> -->
+	<!-- <imageSource>image</imageSource> -->
+	  <pos>0.4 0.255</pos>
+      <size>0.22 0.65</size>
+	  <!-- <maxSize>0.37 0.574</maxSize> -->
+      <padding>0.05 0.1 0.05 0.30</padding>
+      <scrollDirection>vertical</scrollDirection>
+      <autoLayout>1 2</autoLayout>
+      <autoLayoutSelectedZoom>2.3</autoLayoutSelectedZoom>
+      <margin>0.008 0.04</margin>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+	  <showVideoAtDelay>-1</showVideoAtDelay>
+    </imagegrid>
+    <gridtile name="default">
+      <padding>64 16</padding>
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+	  <maxSize>0.37 0.45</maxSize>
+      <imageColor>FFFFFFAA</imageColor>
+      <reflexion>0 0</reflexion>
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+      <padding>64 16</padding>
+    </gridtile>
+    <text name="gridtile">
+      <visible>false</visible>
+      <color>80808080</color>
+      <fontSize>0.016</fontSize>
+      <size>0.5 0</size>
+    </text>
+    <text name="gridtile:selected">
+      <color>FFFFFF00</color>
+      <fontSize>0.035</fontSize>
+      <size>0.6 0</size>
+    </text>
+    <ninepatch name="gridtile.background:selected">
+      <animateColorTime>0</animateColorTime>
+    </ninepatch>    
+  </customView>
+ 
+<!-- INDICADORES, HORA Y ACTIVIDAD DEL MANDO -->	
+  <view name="screen">
+    <text name="clock">
+      <textColor>${colorHora}</textColor>
+	  <color>${colorHora}</color>
+	  <glowColor>DF8020BB</glowColor>
+      <fontSize>0.030</fontSize>
+	  <fontPath>./_arte/fuentes/dbz.ttf</fontPath>
+      <pos>0.812 0.902</pos>
+      <size>0.095 0.056</size>
+      <alignment>right</alignment>
+      <verticalAlignment>center</verticalAlignment>
+   </text>
+   <controllerActivity name="controllerActivity">
+      <pos>0.941 0.907</pos>
+      <size>0.64 0.126</size>
+      <itemSpacing>0.005</itemSpacing>
+      <imagePath>./_arte/imgs/indicador.png</imagePath>
+      <color>FFFFFF80</color>
+      <activityColor>A0A0FFC0</activityColor>
+      <hotkeyColor>FFA0A0C0</hotkeyColor>
+   </controllerActivity>
+  </view>
+
+  <!-- Opciones de subconjunto para pantalla , agregar al final antes del cierre del theme -->
+  <subset name="shader" displayName="${subset.shader}">
+    <include name="None" displayName="${none}"/>
+    <include name="ScanLines">./_arte/mod_pantalla/scanlines.xml</include>
+    <include name="Crt">./_arte/mod_pantalla/crt.xml</include>
+  </subset>
+  <subset name="storyboards" displayName="${animationsSubsetName}">
+    <include name="yes" displayName="${yes}">./storyboards.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset>
+  </theme>

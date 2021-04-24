@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <menuBackground>./_arte/menu_bg/MENU-START-BACKGROUND_3.png</menuBackground>
+    <baseColor>fbb034</baseColor>
+	<!-- <menucolorfondo>a33a1414</menucolorfondo> -->
+	<menucolortexto>800020DF</menucolortexto>
+    <menucolortextoselecionado>ffffff</menucolortextoselecionado>
+	<gradientEndColor>cf8d2e</gradientEndColor>
+    <centerFadeColor>ecb73111</centerFadeColor>
+    <bottomBarColor>ecb531B0</bottomBarColor>
+	    <glowColor>15717118</glowColor>
+    <systemInfoColor>ff7800</systemInfoColor>
+    <backgroundColor>fbb040</backgroundColor>
+  </variables>
+</theme>

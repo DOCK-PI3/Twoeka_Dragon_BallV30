@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+ <view name="menu">
+    <menuIcons name="menuicons">
+      <iconKodi>./_arte/iconos/Kodi.png</iconKodi>
+      <iconSystem>./_arte/iconos/System.png</iconSystem>
+      <iconUpdates>./_arte/iconos/Updates.png</iconUpdates>
+      <iconGames>./_arte/iconos/Games.png</iconGames>
+      <iconControllers>./_arte/iconos/Controllers.png</iconControllers>
+      <iconUI>./_arte/iconos/UI.png</iconUI>
+      <iconSound>./_arte/iconos/Sound.png</iconSound>
+      <iconNetwork>./_arte/iconos/Network.png</iconNetwork>
+      <iconScraper>./_arte/iconos/Scraper.png</iconScraper>
+      <iconAdvanced>./_arte/iconos/Advanced.png</iconAdvanced>
+      <iconQuit>./_arte/iconos/Quit.png</iconQuit>
+      <iconRestart>./_arte/iconos/Restart.png</iconRestart>
+      <iconShutdown>./_arte/iconos/Shutdown.png</iconShutdown>
+      <iconFastShutdown>./_arte/iconos/Fastshutdown.png</iconFastShutdown>
+      <iconRetroachievements>./_arte/iconos/Contest.png</iconRetroachievements>
+    </menuIcons>
+  </view>
+  
+ <view name="menu, system, basic, detailed, grid">
+		<helpsystem name="help">
+			<iconColor>FFFFFFFF</iconColor>
+			<textColor>${pauseColorTexto}</textColor>
+			<iconUpDown>./_arte/iconsets/snes/updown.png</iconUpDown>
+			<iconLeftRight>./_arte/iconsets/snes/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_arte/iconsets/snes/all.png</iconUpDownLeftRight>
+			<iconA>./_arte/iconsets/snes/a.png</iconA>
+			<iconB>./_arte/iconsets/snes/b.png</iconB>
+			<iconX>./_arte/iconsets/snes/x.png</iconX>
+			<iconY>./_arte/iconsets/snes/y.png</iconY>
+			<iconL>./_arte/iconsets/snes/l.png</iconL>
+			<iconR>./_arte/iconsets/snes/r.png</iconR>
+			<iconStart>./_arte/iconsets/snes/start.png</iconStart>
+			<iconSelect>./_arte/iconsets/snes/select.png</iconSelect>
+		</helpsystem>			
+ </view>  
+
+</theme>
